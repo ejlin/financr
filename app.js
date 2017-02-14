@@ -1,4 +1,4 @@
-window.onload = (function() {
+(function() {
   
 
   // Initialize Firebase
@@ -25,6 +25,7 @@ window.onload = (function() {
 
     if ( sign_up_button){
       console.log('sign up button exists');
+      
       sign_up_button.addEventListener('click', e => {
         const email = txtEmail.value;
         const password = txtPassword.value;
@@ -32,24 +33,23 @@ window.onload = (function() {
         const username = txtUsername.value;
         const auth = firebase.auth();
         
-    
         const promise = auth.createUserWithEmailAndPassword(email, password);
         promise.catch(e => console.log(e.message));
-          
-          var errorCode = e.code;
-          var errorMessage = e.message;
-          if (errorCode == 'auth/weak-password') {
-            alert('The password is too weak.');          
-          } else {
-            console.log('Inside here');
-            location.href = "profile.html"; 
-          }
+         
+    //      var errorCode = e.code;
+    //      var errorMessage = e.message;
+    //      if (errorCode == 'auth/weak-password') {
+    //        alert('The password is too weak.');          
+    //      } else {
+    //        console.log('Inside here');
+            location.href = "profile.html";             
+     //     }
           console.log(e);    
       });
       
     }
   
-    document.getElementById("net_worth_text").innerHTML = "$" + (56);
+    document.getElementById("net_worth_text").innerHTML = "$" + (57);
     document.getElementById("current_date").innerHTML = (today.getMonth()+1)+'-'+today.getDate() + '-' + today.getFullYear();           
     document.getElementById("yesterday_change").innerHTML = 5 + ("%") + ("\u2191") ;           
     
@@ -62,6 +62,16 @@ window.onload = (function() {
       
         const promise = auth.signInWithEmailAndPassword(email, pass);
         promise.catch(e => console.log(e.message));
+
+        var errorCode = e.code;
+        var errorMessage = e.message;
+
+        if ( errorCode == 'auth/wrong-password'){
+          alert('Wrong password.');
+        } else{
+          alert(errorMessage);
+        }
+        console.log(e);
 
       });
     }
