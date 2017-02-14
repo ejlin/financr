@@ -1,0 +1,120 @@
+<!-- Name: Eric Lin
+     Date: February 8th, 2017
+     -->
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+  
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </link>
+    
+    <title>
+      Financial Website
+    </title>
+    <style>
+      * { padding:0; margin:0; }
+      html, body { height:100%; }
+      #container { height:100%; border-collapse:collapse;width:100%; }
+    </style>
+  </head>
+
+  <body>
+    <table id="container">
+      <tr>
+        <td valign="top">
+          <div class = "top_header">
+            <a href = "Index.html">
+              <img src="Images/Home_logo.png" alt="Home" class="home_logo"></img>
+            </a>
+            <a href = "profile.html">
+              <img src = "Images/Avatar.png" class = "avatar"></img>
+            </a>      
+            <a href = "Index.html">
+              <p class = "top_header_links_end">
+                Log Out</p>
+            </a>
+            <p class = "top_header_links">
+                Support
+            </p>
+            <a href = "news.html">      
+              <p class = "top_header_links">
+                News
+              </p>
+            </a>
+            <p class = "top_header_links">
+                How it Works
+            </p>
+          </div>
+        </td>
+      
+      <tr >
+        <td>
+          <div class = "newsletter_box">
+            <center style="padding-top: 20px;padding-right: 25px;">
+              <p class = "newsletter_label">
+                Sign up for our newsletter to receive the most up to date financial news daily!
+              </p>
+            </center>
+            <p class = "newsletter_label">
+              Email:
+            </p>
+            <input id = "login_email" type="text" placeholder="Email" name="uname" required>
+            </input>
+            <button id = "login_button" type="submit" class="button_newsletter">
+              <div class = "button_newsletter_sign_text">
+                Sign Up!
+              </div>
+            </button>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td valign="bottom">
+          <div class = "bottom_header">
+            <center>
+              <a href="http://www.facebook.com" style="text-decoration:none;">
+                <img src="Images/Facebook-icon.jpg" alt="Connect with me on Facebook!" style="width: 40px;height:40px;
+                  margin-top:30px;" 
+                  title="Connect with me on Facebook!">
+                </img>
+              </a>
+              <a href="http://www.twitter.com" style="text-decoration:none;">
+                <img src="Images/twitter-icon.png" alt="Connect with me on Facebook!" style="width: 40px;height:40px;
+                  margin-top:30px;" 
+                  title="Connect with me on Facebook!">
+                </img>
+              </a>
+              <a href="http://www.facebook.com/tgih1999" style="text-decoration:none;">
+                <img src="Images/Gmail-icon.png" alt="Connect with me on Facebook!" style="width: 40px;height:40px;
+                  margin-top:30px;" 
+                  title="Connect with me on Facebook!">
+                </img>
+              </a>
+              <div style="color:white;font-family: 'Arial';margin-top:10px;">
+              contact@financr.com
+              </div>
+              <div style="color:white;font-family:'Arial';font-size:12px;margin-top:10px;">
+                <a href="ConditionsOfUse.html" style="color:white;text-decoration:none;">
+                  Conditions of Use
+                </a> 
+                &nbsp; 
+                <a href="Privacy.html" style="color:white;text-decoration:none">
+                  Privacy Notice
+                </a>
+                &nbsp; &copy; 2016-2016, Financr.com, Inc. or its affiliates
+              </div>
+            </center>        
+          </div>
+        </td>
+      </tr>
+    </table>
+    <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+    <script src = "app.js"></script>
+  </body>
+
+</html>
+
+
