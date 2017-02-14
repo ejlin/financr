@@ -1,12 +1,11 @@
 <!-- Name: Eric Lin
      Date: February 8th, 2017
      -->
-
+     
 <!DOCTYPE html>
 
 <html>
   <head>
-  
     <link rel="stylesheet" type="text/css" href="style.css">
     </link>
     
@@ -15,28 +14,38 @@
     </title>
   </head>
 
+  <!-- Body of our Home Page -->
   <body>
+
+    <!-- Our top nav bar. Keep this fixed -->
     <div class = "top_header">
       <a href = "Index.html">
         <img src="Images/Home_logo.png" alt="Home" class="home_logo">
         </img>
       </a>
+      <a href = "profile.html">
+        <img src = "Images/Avatar.png" class = "avatar">
+        </img>
+      </a>
       <a href = "sign_up.html">
-        <p class = "top_header_links_end">
+        <p class = "top_header_links">
           Sign Up
         </p>
       </a>
       <p class = "top_header_links">
         Support
       </p>
-      <p class = "top_header_links">
-        News
-      </p>
+      <a href = "news.html">
+        <p class = "top_header_links">
+          News
+        </p>
+      </a>
       <p class = "top_header_links">
         How it Works
       </p>
     </div>
   
+    <!-- Login bar body -->
     <div class = "sign_up">
       <div class = "header_text">
         <div class = "header_text_top">
@@ -67,12 +76,13 @@
       <div class = "clearfix">
       </div>
     </div>
+
+    <!-- Body of our home page showing features of our site -->
     <img src = "Images/Example_Graph.png" alt="Graph" class="example_image">
     </img>
 
     <div class = "login_pie_text">
     </div>
-
     <div class = "clearfix">
     </div>
 
@@ -104,7 +114,7 @@
     <div class = "clearfix">
     </div>
 
-
+    <!-- Bottom Join Now button. Redirects to Sign up page -->
     <center>
       <a href = "sign_up.html" style="text-decoration: none">
         <div class="join_now_button">
@@ -114,10 +124,10 @@
       </a>
     </center>
 
-  
     <div class = "clearfix">
     </div>
 
+    <!-- Bottom information -->
     <div class = "bottom_header">
       <center>
         <a href="http://www.facebook.com" style="text-decoration:none;">
@@ -150,9 +160,10 @@
         </div>
       </center>        
     </div>
+
+    <!-- Include our scripts for the page -->
     <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
-
     <script src = "app.js"></script>
-   </body>
 
+  </body>
 </html>

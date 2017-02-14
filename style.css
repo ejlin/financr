@@ -22,6 +22,15 @@ html, body
   background: white;
 }
 
+.avatar{
+  float: right;
+  width: 30px;
+  height: 30px;
+  margin-top: 22.5px;
+  margin-right: 100px;
+
+}
+
 .example_image{ 
   float: left;
   width: 250px;
@@ -90,7 +99,7 @@ html, body
   font-family: Roboto,sans-serif;
   font-size: 18px;
   margin-top: 25px;
-  margin-right: 100px;
+  margin-right: 75px;
 }
 
 .top_header_links:hover, .top_header_links_end:hover{
@@ -113,7 +122,8 @@ html, body
 }
 
 .outer_sign_up{
-  margin-left: calc((100% - 350px) / 2);
+  float: right;
+  margin-right: 100px;
   /*margin-right: calc((100% - 350px) / 2);*/
   border-radius: 15px;
   margin-top:70px;
@@ -145,7 +155,26 @@ html, body
   width: 350px;
   height: 325px;
   background-color: white;
+}
 
+.newsletter_box{
+  position: fixed;
+  float: right;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 125px;
+  border-radius: 15px;
+  width: 350px;
+  height: 325px;
+  background-color: #b3b3b3;
+
+}
+
+.newsletter_label{
+  font-family: Roboto,sans-serif;
+  padding-left: 20px;
+  color:white;
+  font-size: 18px;
 }
 
 .sign_up_label{
@@ -157,6 +186,10 @@ html, body
 
 .button_sign_up_text{
   color: #89bf86;
+}
+
+.button_newsletter_sign_text{
+  color: #b3b3b3;
 }
 
 .button_login_text{
@@ -179,6 +212,19 @@ html, body
 .outer_sign_up_text{
   float: right;
   width: 1000px;
+}
+
+.button_newsletter{
+  margin-left: 100px;
+  margin-top: 40px;
+  border-radius: 15px;
+  width: 150px;
+  height: 45px;
+  background-color: white;
+  border: 0px;
+  font-family: Roboto,sans-serif;
+  font-size: 16px;
+  font-color: white;
 }
 
 .header_text{

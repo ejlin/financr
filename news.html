@@ -6,28 +6,30 @@
 
 <html>
   <head>
+  
     <link rel="stylesheet" type="text/css" href="style.css">
     </link>
+    
     <title>
       Financial Website
     </title>
   </head>
 
   <body>
-
     <div class = "top_header">
       <a href = "Index.html">
-      <img src="Images/Home_logo.png" alt="Home" class="home_logo"/>
+        <img src="Images/Home_logo.png" alt="Home" class="home_logo">
+        </img>
       </a>
       <a href = "profile.html">
-      
       <img src = "Images/Avatar.png" class = "avatar">
       </img>
-      </a>
-      <a href = "sign_up.html">
-      <p class = "top_header_links_end">
-        Sign Up
-      </p>
+
+      </a>      
+      <a href = "Index.html">
+        <p class = "top_header_links_end">
+          Log Out
+        </p>
       </a>
       <p class = "top_header_links">
         Support
@@ -41,72 +43,36 @@
         How it Works
       </p>
     </div>
-  
-    <div class = "sign_up">
-      
-      <!-- <div class = "outer_sign_up_text">
-        <div class = "sign_up_already">
-        <center>
-        Already a Member?Login here
-        </center>
-      </div>
-      </div>-->
+    <div class = "clearfix">
+    </div>
 
-   <!--     <div class = "circle">
-        
-         <div class = "circle_text">
-          <center>
-            Already a Member? 
-            <br></br>
-            Login here
-          </div>  
-          </center>
-      </div>
--->
-    <!--    <img src = "Images/Member_Login.png" class = "circle">
-        </img>
--->
-      <div class = "outer_sign_up">
-        <div class = "sign_up_box">
-          <p class = "sign_up_label">
-            Name:
-          </p>
-          <input id = "name_sign_up" type="text" placeholder="Name" name="nname" required>
-          </input>
-          <p class = "sign_up_label">
-            Email:
-          </p>
-          <input id = "email_sign_up" type="text" placeholder="Email" name="ename" required>
-          </input>
-          <p class = "sign_up_label">
-            Username:
-          </p>
-          <input id = "username_sign_up" type="text" placeholder="Username" name="uname" required>
-          </input>
-          <p class = "sign_up_label">
-            Password:
-          </p>
-          <input id = "password_sign_up" type="password" placeholder="Password" name="psw" required>
-          </input>
-        </div>
-        
-        <div class = "bottom_sign_up">
-          <button id = "sign_up_button" class="sign_up_button">
-            <div class = "button_sign_up_text"> 
-              Sign Up
-            </div>
-          </button>
-        </div>
-        <div class = "clearfix">
-        </div>  
+   <br></br>
+   <div class = "newsletter_box">
+    <center style="padding-top: 20px;padding-right: 25px;">
+        <p class = "newsletter_label">
+          Sign up for our newsletter to receive the most up to date financial news daily!
+        </p>
+      </center>
+        <p class = "newsletter_label">
+          Email:
+        </p>
+        <input id = "login_email" type="text" placeholder="Email" name="uname" required>
+        </input>
+        <button id = "login_button" type="submit" class="button_newsletter">
+          <div class = "button_newsletter_sign_text">
+            Sign Up!
+          </div>
+        </button>
       </div>
 
-      <div class = "clearfix">
-        </div>  
+    <div class = "clearfix">
+    </div>
 
-  
-
-    <div class = "bottom_header">
+   
+   
+   
+   
+   <div class = "bottom_header">
       <center>
         <a href="http://www.facebook.com" style="text-decoration:none;">
           <img src="Images/Facebook-icon.jpg" alt="Connect with me on Facebook!" style="width: 40px;height:40px;margin-top:30px;" 
@@ -138,11 +104,11 @@
         </div>
       </center>        
     </div>
-
     <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
-    
+
     <script src = "app.js"></script>
-   </body>
+  </body>
 
 </html>
+
 
