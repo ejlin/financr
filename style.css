@@ -1,7 +1,7 @@
 html, body
 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .content-container {
@@ -10,7 +10,7 @@ html, body
 
 .top_header{
 
-  background-color:#89bf86;  /*#4ABDAC;*/
+  background-color:#89bf86; 
   height: 75px;
   width: 100%;
   /* box-shadow: 0px 0px 3px 5px #ccc; */
@@ -57,10 +57,6 @@ html, body
   margin-left: 150px;
   margin-top: 200px;
   border-radius: 15px 0px 0px 15px;
-}
-
-.three_circles{
-   
 }
 
 .home{
@@ -114,7 +110,6 @@ html, body
   height: 500px;
   padding-bottom: 0px;
   margin: 0;
-
 }
 
 .outer_sign_up{
@@ -123,7 +118,7 @@ html, body
   border-radius: 15px;
   margin-top:70px;
   width: 350px;
-  
+  margin-bottom: 100px;
 }
 
 .bottom_sign_up{
@@ -136,12 +131,6 @@ html, body
 
 
 .sign_up_box{
-  /*float: right;
-  margin-left: calc((100% - 350px) / 2);
-  margin-right: calc((100% - 350px) / 2);
-  border-radius: 15px;
-  width: 350px;
-  height: 525px;*/
   padding-top: 5px;
   padding-bottom: 27px;
   border-radius: 15px 15px 0px 0px;
@@ -167,12 +156,10 @@ html, body
 }
 
 .button_sign_up_text{
-  
   color: #89bf86;
 }
 
 .button_login_text{
-
   color: white;
 }
 
@@ -192,7 +179,6 @@ html, body
 .outer_sign_up_text{
   float: right;
   width: 1000px;
-
 }
 
 .header_text{
@@ -298,12 +284,11 @@ input[type=text], input[type=password]{
 
 
 .button:hover, .sign_up_button:hover, .join_now_button:hover{
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease
-    transition: all 0.5s ease;
-
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease
+  transition: all 0.5s ease;
   opacity: 0.7;
 }
 
@@ -337,7 +322,7 @@ input[type=text], input[type=password]{
   color: white;
   padding: 25px 0px 25px 25px;
   border-radius: 15px;
-  }
+}
 
 .first_text{
   float: left;
