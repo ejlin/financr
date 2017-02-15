@@ -18,9 +18,9 @@
   <body>
 
     <!-- Our top nav bar. Keep this fixed -->
-    <div class = "top_header">
+    <div id = "top_header" class = "top_header">
       <a href = "Index.html">
-        <img src="Images/Home_logo.png" alt="Home" class="home_logo">
+        <img src="Images/Home_logo.png" alt="Home" class="home_logo" name="home_logo">
         </img>
       </a>
       <a href = "profile.html">
@@ -59,6 +59,7 @@
       <img src = "Images/Skyline.png" class = "home_pic">
       </img>
 
+<!--
       <div class = "login_box">
         <p class = "sign_up_label">
           Email:
@@ -77,6 +78,15 @@
         </button>
       </div>
       <div class = "clearfix">
+      </div>
+    </div>
+    -->
+    <div class = "home_buttons">
+      <div id = "home_login">
+        Login
+      </div>
+      <div id = "home_signup">
+        Sign Up
       </div>
     </div>
 
@@ -165,6 +175,8 @@
     </div>
 
     <!-- Include our scripts for the page -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
     <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
     <script src = "app.js"></script>
 

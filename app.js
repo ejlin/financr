@@ -1,6 +1,17 @@
-(function() {
-  
 
+(function() {
+      $(window).scroll(function() { // check if scroll event happened
+      
+        if ($(document).scrollTop() > 0) { // check if user scrolled more than 50 from top of the browser window
+          $(".top_header").css("background-color", "white"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+          $(".top_header_links").css("color", "black");
+          home_logo.src = "Images/Home_logo_reversed.png";
+        } else {
+          $(".top_header").css("background-color", "#080808"); // if not, change it back to transparent
+          $(".top_header_links").css("color", "white");  
+          home_logo.src = "Images/Home_logo.png";          
+        }
+      });
   // Initialize Firebase
     const config = {
       apiKey: "AIzaSyCOw8jnCcgV0heg6ws4QJ_GwZMO7Lp-Xt0",
