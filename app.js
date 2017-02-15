@@ -1,15 +1,31 @@
 
 (function() {
+  
       $(window).scroll(function() { // check if scroll event happened
       
+        if ($(document).scrollTop() >= $(".home_pic").height()) { // check if user scrolled more than 50 from top of the browser window
+          $(".top_header").css("box-shadow", "0px 0px 2px 3px #ccc");
+        }
+        if ($(document).scrollTop() < $(".home_pic").height()) { // check if user scrolled more than 50 from top of the browser window
+          $(".top_header").css("box-shadow", "0px 0px 0px 0px #ccc");
+        }
+
+
         if ($(document).scrollTop() > 0) { // check if user scrolled more than 50 from top of the browser window
           $(".top_header").css("background-color", "white"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
           $(".top_header_links").css("color", "black");
           home_logo.src = "Images/Home_logo_reversed.png";
+          avatar.src = "Images/Avatar_reversed.png";
+     //   }
+    //    else if ($(document).scrollTop() > 100vh) { // check if user scrolled more than 50 from top of the browser window
+//      $(".top_header").css("box-shadow", "0px 0px 3px 5px #ccc"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8) 
         } else {
-          $(".top_header").css("background-color", "#080808"); // if not, change it back to transparent
+          $(".top_header").css("background-color", "transparent"); //#080808 // if not, change it back to transparent
           $(".top_header_links").css("color", "white");  
-          home_logo.src = "Images/Home_logo.png";          
+          home_logo.src = "Images/Home_logo.png";  
+          avatar.src = "Images/Avatar.png";
+          $(".top_header").css("box-shadow", "0px 0px 0px 0px #ccc");          
+          
         }
       });
   // Initialize Firebase
