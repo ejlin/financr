@@ -1,24 +1,46 @@
-
 (function() {
   
-      $(window).scroll(function() { // check if scroll event happened
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+          // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+            scrollTop: $(hash).offset().top
+            }, 800, function(){
+   
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+
+    $(window).scroll(function() { // check if scroll event happened
       
         if ($(document).scrollTop() >= $(".home_pic").height()) { // check if user scrolled more than 50 from top of the browser window
           $(".top_header").css("box-shadow", "0px 0px 2px 3px #ccc");
+          $("#up_arrow").css("visibility", "visible");
         }
         if ($(document).scrollTop() < $(".home_pic").height()) { // check if user scrolled more than 50 from top of the browser window
           $(".top_header").css("box-shadow", "0px 0px 0px 0px #ccc");
+          $("#up_arrow").css("visibility", "hidden");          
         }
-
-
         if ($(document).scrollTop() > 0) { // check if user scrolled more than 50 from top of the browser window
           $(".top_header").css("background-color", "white"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+          $(".top_header").css("opacity", "0.8"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)          
           $(".top_header_links").css("color", "black");
           home_logo.src = "Images/Home_logo_reversed.png";
           avatar.src = "Images/Avatar_reversed.png";
-     //   }
-    //    else if ($(document).scrollTop() > 100vh) { // check if user scrolled more than 50 from top of the browser window
-//      $(".top_header").css("box-shadow", "0px 0px 3px 5px #ccc"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8) 
         } else {
           $(".top_header").css("background-color", "transparent"); //#080808 // if not, change it back to transparent
           $(".top_header_links").css("color", "white");  
@@ -27,9 +49,10 @@
           $(".top_header").css("box-shadow", "0px 0px 0px 0px #ccc");          
           
         }
-      });
-  // Initialize Firebase
-    const config = {
+    });
+
+   // Initialize Firebase
+   const config = {
       apiKey: "AIzaSyCOw8jnCcgV0heg6ws4QJ_GwZMO7Lp-Xt0",
       authDomain: "financial-applet.firebaseapp.com",
       databaseURL: "https://financial-applet.firebaseio.com",

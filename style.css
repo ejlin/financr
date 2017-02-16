@@ -30,21 +30,36 @@ html, body
 }
 
 .home_buttons{
-  margin-left: calc(50% - 50px);
+  margin-left: calc(50% - 100px);
 }
 
 #home_login{
   background-color: white;
-  width: 100px;
+  width: 150px;
   padding: 5px 25px 5px 25px;
   border-radius: 20px;
-  margin-top: 80vh;
+  margin-top: 75vh;
   border: 2px solid white;
   float: right;
   position: absolute;
   font-family: Roboto, Sans-serif;
   font-size: 20px;
   color: #324d79;
+}
+
+#down_arrow{
+  position: absolute;
+  margin-left: calc(50% - 25px);
+  margin-top: 85vh;
+  float: right;
+}
+
+#up_arrow{
+  visibility: hidden;
+  position: fixed;
+  margin-top: 15vh;
+  margin-left: calc(100% - 150px);
+  float: right;
   transition: 0.5s all;
 }
 
