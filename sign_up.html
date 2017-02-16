@@ -15,34 +15,55 @@
 
   <body>
 
-    <div class = "top_header">
+    <!-- Our top nav bar. Keep this fixed -->
+    <div id = "top_header" class = "top_header">
       <a href = "Index.html">
-      <img src="Images/Home_logo.png" alt="Home" class="home_logo"/>
+        <img src="Images/Home_logo.png" alt="Home" class="home_logo" name="home_logo"/>
       </a>
       <a href = "profile.html">
-      
-      <img src = "Images/Avatar.png" class = "avatar">
-      </img>
+        <img src = "Images/avatar.png" class = "avatar" name = "avatar"/>
       </a>
       <a href = "sign_up.html">
-      <p class = "top_header_links_end">
-        Sign Up
-      </p>
+        <p class = "top_header_links">
+          Sign Up
+        </p>
       </a>
       <p class = "top_header_links">
         Support
       </p>
-      <a href = "news.html">      
-      <p class = "top_header_links">
-        News
-      </p>
+      <a href = "news.html">
+        <p class = "top_header_links">
+          News
+        </p>
       </a>
       <p class = "top_header_links">
         How it Works
       </p>
     </div>
+
+    <br></br> 
+
+    <div id = "sign_up_border_box">
+      <input id = "name_first_sign_up" class = "sign_up_form" type="text" placeholder="First name" name="nname" required>
+      </input>
+      <input id = "name_last_sign_up" class = "sign_up_form" type="text" placeholder="Last name" name="nname" required>
+      </input>
+      <input id = "email_sign_up" class = "sign_up_form_second" type="text" placeholder="Email" name="ename" required>
+      </input>
+      <input id = "email_confirmation_sign_up" class = "sign_up_form_second" type="text" placeholder="Confirm email" name="ename" required>
+      </input>
+      <input id = "password_sign_up" class = "sign_up_form_second" type="password" placeholder="Password" name="psw" required>
+      </input>
+      <input id = "password_sign_up" class = "sign_up_form_second" type="password" placeholder="Confirm password" name="psw" required>
+      </input>
+      <button id = "sign_up_button" class="sign_up_button">
+        <div class = "button_sign_up_text"> 
+          Sign Up
+        </div>
+      </button>
+    </div>
   
-    <div class = "sign_up">
+  <!--  <div class = "sign_up">
       
       <div class = "outer_sign_up">
         <div class = "sign_up_box">
@@ -75,6 +96,8 @@
             </div>
           </button>
         </div>
+
+      -->
         <div class = "clearfix">
         </div>  
       </div>

@@ -1,53 +1,42 @@
 (function() {
   
     $(document).ready(function(){
-      // Add smooth scrolling to all links
-        $("a").on('click', function(event) {
-
-        // Make sure this.hash has a value before overriding default behavior
-          if (this.hash !== "") {
-          // Prevent default anchor click behavior
-            event.preventDefault();
-
-            // Store hash
-            var hash = this.hash;
-
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
             scrollTop: $(hash).offset().top
-            }, 800, function(){
+          }, 800, function(){
    
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-            });
-          } // End if
-        });
+          window.location.hash = hash;
+          });
+        }
       });
+    });
 
     $(window).scroll(function() { // check if scroll event happened
       
-        if ($(document).scrollTop() >= $(".home_pic").height()) { // check if user scrolled more than 50 from top of the browser window
-          $(".top_header").css("box-shadow", "0px 0px 2px 3px #ccc");
+        if ($(document).scrollTop() >= $(".home_pic").height()) { 
+          $(".top_header_home").css("box-shadow", "0px 0px 2px 3px #ccc");
           $("#up_arrow").css("visibility", "visible");
         }
-        if ($(document).scrollTop() < $(".home_pic").height()) { // check if user scrolled more than 50 from top of the browser window
-          $(".top_header").css("box-shadow", "0px 0px 0px 0px #ccc");
+        if ($(document).scrollTop() < $(".home_pic").height()) {
+          $(".top_header_home").css("box-shadow", "0px 0px 0px 0px #ccc");
           $("#up_arrow").css("visibility", "hidden");          
         }
-        if ($(document).scrollTop() > 0) { // check if user scrolled more than 50 from top of the browser window
-          $(".top_header").css("background-color", "white"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-          $(".top_header").css("opacity", "0.8"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)          
+        if ($(document).scrollTop() > 0) { 
+          $(".top_header_home").css("background-color", "white"); 
+          $(".top_header_home").css("opacity", "0.8");           
           $(".top_header_links").css("color", "black");
           home_logo.src = "Images/Home_logo_reversed.png";
-          avatar.src = "Images/Avatar_reversed.png";
+          avatar.src = "Images/avatar_reversed.png";
         } else {
-          $(".top_header").css("background-color", "transparent"); //#080808 // if not, change it back to transparent
+          $(".top_header_home").css("background-color", "transparent");
           $(".top_header_links").css("color", "white");  
           home_logo.src = "Images/Home_logo.png";  
-          avatar.src = "Images/Avatar.png";
-          $(".top_header").css("box-shadow", "0px 0px 0px 0px #ccc");          
-          
+          avatar.src = "Images/avatar.png";
+          $(".top_header_home").css("box-shadow", "0px 0px 0px 0px #ccc");               
         }
     });
 
