@@ -325,7 +325,7 @@ html, body
 
 .sign_up_form{
   width: 44%;
-  height: 45px;
+  height: 9%;
   padding: 0px 20px;
   display: inline-block;
   border: 1px solid #ccc;
@@ -337,16 +337,35 @@ html, body
 }
 
 .sign_up_form_second{
-  width: 92%;
-  height: 45px;
+  float: left;
+  width: 44%;
+  height: 9%;
   padding: 0px 20px;
   margin: 0px 20px;
+  margin-left: 4%;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
   font-family: Roboto,sans-serif;
   font-size: 14px;
   margin-top: 5%;
+}
+
+#already_member{
+  width: 44%; 
+  height: calc(51% + 32px); 
+  border-radius: 15px;
+  position:relative; 
+  background-color: #cccccc;
+  margin-left: calc(52% + 2px);
+  margin-top: 5%;
+}
+
+#already_member_text{
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  margin-left: 10%;
 }
 
 #join_button_sign_up{
