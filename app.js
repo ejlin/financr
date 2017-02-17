@@ -17,11 +17,11 @@
 
     $(window).scroll(function() { // check if scroll event happened
       
-        if ($(document).scrollTop() >= $(".home_pic").height()) { 
+        if ($(document).scrollTop() >= $(".home_background_picture").height()) { 
           $(".top_header_home").css("box-shadow", "0px 0px 2px 3px #ccc");
           $("#up_arrow").css("visibility", "visible");
         }
-        if ($(document).scrollTop() < $(".home_pic").height()) {
+        if ($(document).scrollTop() < $(".home_background_picture").height()) {
           $(".top_header_home").css("box-shadow", "0px 0px 0px 0px #ccc");
           $("#up_arrow").css("visibility", "hidden");          
         }

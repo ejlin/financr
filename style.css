@@ -79,7 +79,7 @@ html, body
   transition: 0.5s all;
 }
 
-.home_pictures{
+#home_pictures{
   float: left;
   width: 30%;
   margin-top: 5%;
