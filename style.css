@@ -352,20 +352,18 @@ html, body
 }
 
 #already_member{
-  width: 44%; 
-  height: calc(51% + 32px); 
-  border-radius: 15px;
+  width: 34%; 
+  height: calc(51%); 
   position:relative; 
   background-color: #cccccc;
-  margin-left: calc(52% + 2px);
-  margin-top: 5%;
+  margin-left: calc(57% + 2px);
+  margin-top: calc(5% + 16px);
 }
 
 #already_member_text{
   color: white;
   font-family: Roboto, sans-serif;
   font-size: 20px;
-  margin-left: 10%;
 }
 
 #join_button_sign_up{
