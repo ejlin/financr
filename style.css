@@ -157,7 +157,7 @@ html, body
   margin-left: 100px;
 }
 
-.top_header_links{
+.top_header_links, .top_header_links_profile{
   float: right;
   color: white;
   font-family: Roboto,sans-serif;
@@ -351,6 +351,29 @@ html, body
   margin-top: 5%;
 }
 
+.login_form_second{
+  float: left;
+  width: 50%;
+  height: 9%;
+  padding: 0px 20px;
+  margin: 0px 20px;
+  margin-left: 10%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: Roboto,sans-serif;
+  font-size: 14px;
+}
+
+#email_login{
+  margin-top: calc(18% + 20px);
+} 
+
+#password_login{
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
 #already_member{
   width: 34%; 
   height: calc(51%); 
@@ -363,7 +386,8 @@ html, body
 #already_member_text{
   color: white;
   font-family: Roboto, sans-serif;
-  font-size: 20px;
+  font-size: 24px;
+  padding-top: 40%;
 }
 
 #join_button_sign_up{
@@ -407,16 +431,32 @@ html, body
   text-decoration: none;
 }
 
-
 .sign_up_button{
-  margin-left: calc(37.5%);
+  margin-left: 32.5%;
   margin-top: 3%;
   padding: 15px 25px 15px 25px;
-  width: 25%;
-  height: 10%;
+  width: 35%;
+  height: 9%;
   background-color: #4f97f3;
+  border-radius: 25px;
   border: 0px;
   font-size: 20px;
+  font-size: 1.3vw;  
+  padding-top: 10px;
+}
+
+.login_button{
+  margin-left: calc(15% + 30px);
+  margin-top: 3%;
+  padding: 15px 25px 15px 25px;
+  width: 30%;
+  height: 9%;
+  background-color: #4f97f3;
+  border-radius: 25px;
+  border: 0px;
+  font-size: 20px;
+  font-size: 1.3vw;  
+  padding-top: 10px;
 }
 
 .circle {

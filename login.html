@@ -6,86 +6,95 @@
 
 <html>
   <head>
-  
     <link rel="stylesheet" type="text/css" href="style.css">
     </link>
-    
     <title>
       Financial Website
     </title>
   </head>
 
   <body>
+
     <!-- Our top nav bar. Keep this fixed -->
     <div id = "top_header" class = "top_header">
       <a href = "Index.html">
-        <img src="Images/Home_logo.png" alt="Home" class="home_logo" name="profile_logo"/>
+        <img src="Images/Home_logo.png" alt="Home" class="home_logo" name="sign_up_logo"/>
       </a>
       <a href = "profile.html">
-        <img src = "Images/avatar.png" class = "avatar" name = "profile_avatar"/>
+        <img src = "Images/avatar.png" class = "avatar" name = "avatar"/>
       </a>
-      <a href = "sign_up.html">
-        <p class = "top_header_links_profile">
-          Create+
+<!--      <a href = "sign_up.html">
+        <p class = "top_header_links">
+          Sign Up
         </p>
       </a>
-  <!--    <p class = "top_header_links">
+      <p class = "top_header_links">
         Support
       </p>
       <p class = "top_header_links">
         How it Works
       </p>-->
     </div>
-    <div class = "clearfix">
-    </div>
 
-    <div class = "profile_top_text">
-    <div class = "profile_text">
-      Welcome back,
-    </div>
-    </div>
+    <br></br> 
 
-  <div class = "right_side">
-    <div id = "net_worth" class = "net_worth">
-      <div class = "first_text">
-        Net Worth: 
-      </div>
+    <div id = "sign_up_border_box">
+      <input id = "email_login" class = "login_form_second" type="text" placeholder="Email" name="ename" required>
+      </input>
+      <input id = "password_login" class = "login_form_second" type="password" placeholder="Password" name="psw" required>
+      </input>
 
-      <div id = "net_worth_text" class = "net_worth_text">
-        $0
-      </div>
-    </div>
-    <div class = "change_worth">
-      <div class = "date">
-        Today's date is: 
-      </div>
-      <div id = "current_date" class = "current_date">
-      </div>
-      <div class = "date_change">
-        Your Net Worth has experienced a 
+      <button id = "login_button" class="login_button">
+        <div class = "button_sign_up_text"> 
+          Login
         </div>
-        <div id = "yesterday_change" class = "yesterday_change"></div>
-        <div class = "date_change">
-        change from yesterday. 
-      </div>
-    </div> 
- </div>
- 
-    <div class = "clearfix">
+      </button>
     </div>
-
-    <div class = "main_profile">
-
-    </div>
-
-    <center>
-        <div class="join_now_button">
-          <div class = "button_login_text_join">Return to Top
-          </div>
+  
+  <!--  <div class = "sign_up">
+      
+      <div class = "outer_sign_up">
+        <div class = "sign_up_box">
+          <p class = "sign_up_label">
+            Name:
+          </p>
+          <input id = "name_sign_up" type="text" placeholder="Name" name="nname" required>
+          </input>
+          <p class = "sign_up_label">
+            Email:
+          </p>
+          <input id = "email_sign_up" type="text" placeholder="Email" name="ename" required>
+          </input>
+          <p class = "sign_up_label">
+            Username:
+          </p>
+          <input id = "username_sign_up" type="text" placeholder="Username" name="uname" required>
+          </input>
+          <p class = "sign_up_label">
+            Password:
+          </p>
+          <input id = "password_sign_up" type="password" placeholder="Password" name="psw" required>
+          </input>
         </div>
-    </center>
+        
+        <div class = "bottom_sign_up">
+          <button id = "sign_up_button" class="sign_up_button">
+            <div class = "button_sign_up_text"> 
+              Sign Up
+            </div>
+          </button>
+        </div>
 
-    
+      -->
+        <div class = "clearfix">
+        </div>  
+      </div>
+
+      <div class = "clearfix">
+        </div>  
+
+  
+
     <div class = "bottom_header">
       <center>
         <a href="http://www.facebook.com" style="text-decoration:none;">
@@ -119,10 +128,12 @@
       </center>        
     </div>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>     
     <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
     <script src = "app.js"></script>
-  </body>
+    
+   </body>
 
 </html>
+
 

@@ -1,6 +1,4 @@
-(function() {
-  
-    $(document).ready(function(){
+$(document).ready(function(){
       $("a").on('click', function(event) {
         if (this.hash !== "") {
           event.preventDefault();
@@ -28,18 +26,22 @@
         if ($(document).scrollTop() > 0) { 
           $(".top_header_home").css("background-color", "white"); 
           $(".top_header_home").css("opacity", "0.8");           
-          $(".top_header_links").css("color", "black");
+          $(".top_header_links").css("color", "#4b95f6");
           home_logo.src = "Images/Home_logo_reversed.png";
-          avatar.src = "Images/avatar_reversed.png";
+          home_avatar.src = "Images/avatar_reversed.png";
         } else {
           $(".top_header_home").css("background-color", "transparent");
           $(".top_header_links").css("color", "white");  
           home_logo.src = "Images/Home_logo.png";  
-          avatar.src = "Images/avatar.png";
+          home_avatar.src = "Images/avatar.png";
           $(".top_header_home").css("box-shadow", "0px 0px 0px 0px #ccc");               
         }
     });
 
+
+(function() {
+  
+    
    // Initialize Firebase
    const config = {
       apiKey: "AIzaSyCOw8jnCcgV0heg6ws4QJ_GwZMO7Lp-Xt0",
