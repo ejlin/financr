@@ -6,7 +6,7 @@ $(document).ready(function(){
           $('html, body').animate({
             scrollTop: $(hash).offset().top
           }, 800, function(){
-   
+
           window.location.hash = hash;
           });
         }
@@ -14,34 +14,34 @@ $(document).ready(function(){
     });
 
     $(window).scroll(function() { // check if scroll event happened
-      
-        if ($(document).scrollTop() >= $(".home_background_picture").height()) { 
+
+        if ($(document).scrollTop() >= $(".home_background_picture").height()) {
           $(".top_header_home").css("box-shadow", "0px 0px 2px 3px #ccc");
           $("#up_arrow").css("visibility", "visible");
         }
         if ($(document).scrollTop() < $(".home_background_picture").height()) {
           $(".top_header_home").css("box-shadow", "0px 0px 0px 0px #ccc");
-          $("#up_arrow").css("visibility", "hidden");          
+          $("#up_arrow").css("visibility", "hidden");
         }
-        if ($(document).scrollTop() > 0) { 
-          $(".top_header_home").css("background-color", "white"); 
-          $(".top_header_home").css("opacity", "0.8");           
+        if ($(document).scrollTop() > 0) {
+          $(".top_header_home").css("background-color", "white");
+          $(".top_header_home").css("opacity", "0.8");
           $(".top_header_links").css("color", "#4b95f6");
-          home_logo.src = "Images/Home_logo_reversed.png";
+          home_logo.src = "Images/eventr_reversed.png";
           home_avatar.src = "Images/avatar_reversed.png";
         } else {
           $(".top_header_home").css("background-color", "transparent");
-          $(".top_header_links").css("color", "white");  
-          home_logo.src = "Images/Home_logo.png";  
+          $(".top_header_links").css("color", "white");
+          home_logo.src = "Images/eventr.png";
           home_avatar.src = "Images/avatar.png";
-          $(".top_header_home").css("box-shadow", "0px 0px 0px 0px #ccc");               
+          $(".top_header_home").css("box-shadow", "0px 0px 0px 0px #ccc");
         }
     });
 
 
 (function() {
-  
-    
+
+
    // Initialize Firebase
    const config = {
       apiKey: "AIzaSyCOw8jnCcgV0heg6ws4QJ_GwZMO7Lp-Xt0",
@@ -66,41 +66,41 @@ $(document).ready(function(){
 
     if ( sign_up_button){
       console.log('sign up button exists');
-      
+
       sign_up_button.addEventListener('click', e => {
         const email = txtEmail.value;
         const password = txtPassword.value;
         const name = txtName.value;
         const username = txtUsername.value;
         const auth = firebase.auth();
-        
+
         const promise = auth.createUserWithEmailAndPassword(email, password);
         promise.catch(e => console.log(e.message));
-         
+
     //      var errorCode = e.code;
     //      var errorMessage = e.message;
     //      if (errorCode == 'auth/weak-password') {
-    //        alert('The password is too weak.');          
+    //        alert('The password is too weak.');
     //      } else {
     //        console.log('Inside here');
-            location.href = "profile.html";             
+            location.href = "profile.html";
      //     }
-          console.log(e);    
+          console.log(e);
       });
-      
+
     }
-  
+
     document.getElementById("net_worth_text").innerHTML = "$" + (57);
-    document.getElementById("current_date").innerHTML = (today.getMonth()+1)+'-'+today.getDate() + '-' + today.getFullYear();           
-    document.getElementById("yesterday_change").innerHTML = 5 + ("%") + ("\u2191") ;           
-    
-    
+    document.getElementById("current_date").innerHTML = (today.getMonth()+1)+'-'+today.getDate() + '-' + today.getFullYear();
+    document.getElementById("yesterday_change").innerHTML = 5 + ("%") + ("\u2191") ;
+
+
     if ( login_button){
       login_button.addEventListener('click', e=>{
         const email = loginEmail.value;
         const pass = loginPassword.value;
         const auth = firebase.auth();
-      
+
         const promise = auth.signInWithEmailAndPassword(email, pass);
         promise.catch(e => console.log(e.message));
 
@@ -126,4 +126,3 @@ $(document).ready(function(){
     });
 
 }());
-

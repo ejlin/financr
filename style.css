@@ -94,7 +94,7 @@ html, body
 
 #home_login:hover{
   opacity: 0.6;
-} 
+}
 
 .avatar{
   float: right;
@@ -104,7 +104,7 @@ html, body
   margin-right: 100px;
 }
 
-.example_image{ 
+.example_image{
   float: left;
   width: 250px;
   height: 250px;
@@ -113,7 +113,7 @@ html, body
   margin-bottom: 50px;
 }
 
-.example_image_bar{ 
+.example_image_bar{
   float: left;
   width: 200px;
   height: 350px;
@@ -125,7 +125,7 @@ html, body
   float: left;
   background-color: #a1e59d;
   width: calc(60% - 400px);
-  height: 150px;  
+  height: 150px;
   margin-left: 150px;
   margin-top: 150px;
   border-radius: 0px 15px 15px 0px;
@@ -135,7 +135,7 @@ html, body
   float: left;
   background-color: #a1e59d;
   width: calc(60% - 400px);
-  height: 150px;  
+  height: 150px;
   margin-left: 150px;
   margin-top: 200px;
   border-radius: 15px 0px 0px 15px;
@@ -152,8 +152,8 @@ html, body
 .home_logo{
   float: left;
   width: 120px;
-  height: 30px;
-  margin-top: 15px;
+  height: 55px;
+  margin-top: 5px;
   margin-left: 100px;
 }
 
@@ -367,7 +367,7 @@ html, body
 
 #email_login{
   margin-top: calc(18% + 20px);
-} 
+}
 
 #password_login{
   margin-top: 5%;
@@ -375,9 +375,9 @@ html, body
 }
 
 #already_member{
-  width: 34%; 
-  height: calc(51%); 
-  position:relative; 
+  width: 34%;
+  height: calc(51%);
+  position:relative;
   background-color: #cccccc;
   margin-left: calc(57% + 2px);
   margin-top: calc(5% + 16px);
@@ -441,7 +441,7 @@ html, body
   border-radius: 25px;
   border: 0px;
   font-size: 20px;
-  font-size: 1.3vw;  
+  font-size: 1.3vw;
   padding-top: 10px;
 }
 
@@ -455,7 +455,7 @@ html, body
   border-radius: 25px;
   border: 0px;
   font-size: 20px;
-  font-size: 1.3vw;  
+  font-size: 1.3vw;
   padding-top: 10px;
 }
 
@@ -512,7 +512,7 @@ html, body
 
 .net_worth{
   width: calc(100% + 25px);
-  height: 40px; 
+  height: 40px;
   margin-top: 100px;
   background-color: #ffde66;
   color: white;
@@ -582,4 +582,3 @@ html, body
   font-size: 20px;
   font-family: Roboto, sans-serif;
 }
-
