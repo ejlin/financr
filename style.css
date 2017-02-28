@@ -51,12 +51,22 @@ html, body
 
 #sign_up_border_box{
   width: 50%;
-  height: 70vh;
+  height: 100vh;
   background-color: white;
   margin-top: calc(60px + 5%);
   box-shadow: 0px 0px 3px 3px #ccc;
   margin-bottom: 100px;
   margin-left: 25%;
+}
+
+#login_border_box{
+  width: 40%;
+  height: 50vh;
+  background-color: white;
+  margin-top: calc(60px + 5%);
+  box-shadow: 0px 0px 3px 3px #ccc;
+  margin-bottom: 100px;
+  margin-left: 30%;
 }
 
 .sign_up_form{
@@ -119,16 +129,6 @@ html, body
   height: 350px;
   margin-left: 20%;
   margin-top: 100px;
-}
-
-.login_pio_text{
-  float: left;
-  background-color: #a1e59d;
-  width: calc(60% - 400px);
-  height: 150px;
-  margin-left: 150px;
-  margin-top: 150px;
-  border-radius: 0px 15px 15px 0px;
 }
 
 .login_bar_text{
@@ -324,7 +324,7 @@ html, body
 }
 
 .sign_up_form{
-  width: 44%;
+  width: 70%;
   height: 9%;
   padding: 0px 20px;
   display: inline-block;
@@ -333,31 +333,16 @@ html, body
   font-family: Roboto,sans-serif;
   font-size: 14px;
   margin-top: 5%;
-  margin-left: 4%;
-}
-
-.sign_up_form_second{
-  float: left;
-  width: 44%;
-  height: 9%;
-  padding: 0px 20px;
-  margin: 0px 20px;
-  margin-left: 4%;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  font-family: Roboto,sans-serif;
-  font-size: 14px;
-  margin-top: 5%;
+  margin-left: 15%;
 }
 
 .login_form_second{
   float: left;
   width: 50%;
-  height: 9%;
+  height: 15%;
   padding: 0px 20px;
   margin: 0px 20px;
-  margin-left: 10%;
+  margin-left: 25%;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
@@ -366,7 +351,7 @@ html, body
 }
 
 #email_login{
-  margin-top: calc(18% + 20px);
+  margin-top: 10%;
 }
 
 #password_login{
@@ -376,11 +361,12 @@ html, body
 
 #already_member{
   width: 34%;
-  height: calc(51%);
+  height: 51%;
   position:relative;
   background-color: #cccccc;
   margin-left: calc(57% + 2px);
   margin-top: calc(5% + 16px);
+  border-radius: 50%;
 }
 
 #already_member_text{
@@ -420,7 +406,7 @@ html, body
 
 .join_now_button{
   margin-top: 100px;
-  border-radius: 15px;
+  border-radius: 25px;
   width: 250px;
   height: 45px;
   background-color: #4f97f3;
@@ -433,10 +419,10 @@ html, body
 
 .sign_up_button{
   margin-left: 32.5%;
-  margin-top: 3%;
+  margin-top: 5%;
   padding: 15px 25px 15px 25px;
   width: 35%;
-  height: 9%;
+  height: 6%;
   background-color: #4f97f3;
   border-radius: 25px;
   border: 0px;
@@ -446,11 +432,11 @@ html, body
 }
 
 .login_button{
-  margin-left: calc(15% + 30px);
-  margin-top: 3%;
+  margin-left: 35%;
+  margin-top: 5%;
   padding: 15px 25px 15px 25px;
   width: 30%;
-  height: 9%;
+  height: 12%;
   background-color: #4f97f3;
   border-radius: 25px;
   border: 0px;
