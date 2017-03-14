@@ -24,7 +24,7 @@ $(document).ready(function(){
  * the header navigation bar style accordingly
  */
 $(window).scroll(function() {
-  if ( $('body').is('home_page')){
+//  if ( $('body').is('home_page')){
     if ($(document).scrollTop() >= $(".home_background_picture").height()) {
       $(".top_header_home").css("box-shadow", "0px 0px 2px 3px #ccc");
       $("#up_arrow").css("visibility", "visible");
@@ -46,7 +46,7 @@ $(window).scroll(function() {
       home_avatar.src = "Images/avatar.png";
       $(".top_header_home").css("box-shadow", "0px 0px 0px 0px #ccc");
     }
-  }
+//  }
 });
 
 /* This function will initialize our database, Firebase and take care of
